@@ -1,7 +1,11 @@
-import React from 'react';
+import { useState } from "react";
 
-const Product = ({ productInfo }) => {
-
-};
+function Product(props){
+    const [productInfo, setProductInfo] = useState([])
+    console.log(props)
+}
+return (
+    <div className="product"></div>
+)
 
 export default Product;
