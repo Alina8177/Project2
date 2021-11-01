@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-// import Product from './Product';
+import ProductInfo from './ProductInfo';
 import ProductData from './ProductData'
 import './App.css';
 
@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <ProductData itemData></ProductData>
-      {/* <ProductData productInfo></Product> */}
+     <ProductData></ProductData>
+     <ProductInfo></ProductInfo>
     </div>
   );
 }

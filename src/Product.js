@@ -1,8 +1,9 @@
-// import { useState } from "react";
+// import React from "react";
 
-// function Product(props){
-//     const [productInfo, setProductInfo] = useState([])
-//     console.log(props)
+// const Product = ({productInfo}) => {
+//     const {
+
+//     }
 // }
 // return (
 //     <div className="product"></div>
