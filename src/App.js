@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ProductInfo from './ProductInfo';
-import ProductData from './ProductData'
+import { Route, Switch } from 'react-router-dom'
 import './App.css';
 
 function App() {
@@ -8,8 +8,11 @@ function App() {
 
   return (
     <div className="App">
-     <ProductData></ProductData>
-     <ProductInfo></ProductInfo>
+     <Switch>
+       <Route path="/">
+     <ProductInfo />
+       </Route>
+     </Switch>
     </div>
   );
 }

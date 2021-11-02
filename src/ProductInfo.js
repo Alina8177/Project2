@@ -24,10 +24,22 @@ useEffect(() => {
     makeAPICall();
   }, [props.title]);
 
-console.log(items)
+const productDescription = () => {
+  itemInfo.map(items[0])
+}
 return (
     <div className="ProductInfo">
         <h3>Description</h3>
+        <div>
+          <ul>
+            {items.map((item) => {
+              return <li key={item.id}>
+                {item.shoe}
+                <img className="shoe-img" src={item.media.imageUrl} alt="shoe" />
+              </li>
+            })}
+          </ul>
+        </div>
     </div>
 )
 };
