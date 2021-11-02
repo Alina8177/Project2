@@ -31,9 +31,9 @@ return (
     <div className="ProductInfo">
         <h3>Description</h3>
         <div>
-          <ul>
+          <ul className="shoe-list">
             {items.map((item) => {
-              return <li key={item.id}>
+              return <li className="shoe-item" key={item.id}>
                 {item.shoe}
                 <img className="shoe-img" src={item.media.imageUrl} alt="shoe" />
               </li>
