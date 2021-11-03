@@ -1,0 +1,2 @@
+*{margin:0;padding:0;text-decoration:none;color:unset}.container{margin:0 auto;max-width:1200px;padding:0 30px}.shoe-list{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);grid-gap:15px;gap:15px}.shoe-item{padding:20px;background-color:#eee;border-radius:12px;margin-bottom:12px;display:flex;flex-direction:column;grid-gap:10px;gap:10px}.shoe-img{width:100px;height:100px}@media (max-width:425px){.shoe-list{grid-template-columns:1fr 1fr}}
+/*# sourceMappingURL=main.62843c7c.chunk.css.map */
