@@ -29,7 +29,7 @@ useEffect(() => {
   }, [props.title]);
 return (
     <div className="ProductInfo">
-        <h3 style={{ marginBottom: 20 }}>Description</h3>
+        <h3 style={{ marginBottom: 20 }}>Sneakers</h3>
         <div>
           <ul className="shoe-list">
             {itemInfo.map((item) => {
