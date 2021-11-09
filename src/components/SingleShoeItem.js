@@ -1,6 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from "react";
 import { useParams } from 'react-router';
-import { useEffect } from 'react/cjs/react.development';
 import {  apiKey, hostName } from './../consts'
 import Image from './Image'
 
