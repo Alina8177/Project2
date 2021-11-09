@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { apiKey, baseUrl, hostName } from "../consts";
+import { apiKey, baseUrl, hostName } from "./../consts";
 import Image from './Image'
 import LinkButton from "./LinkButton";
 
@@ -8,25 +8,25 @@ const [itemInfo, setItemInfo] = useState([]);
 
   const makeAPICall = () => {
     fetch(baseUrl, {
-	method: "GET",
-  
-	headers: {
-		"x-rapidapi-host": hostName,
-		"x-rapidapi-key": apiKey
-	},
-})
-        .then((res) => res.json())
-        .then((data) => {
+        method: "GET",
+        
+        headers: {
+          "x-rapidapi-host": hostName,
+          "x-rapidapi-key": apiKey
+        },
+      })
+      .then((res) => res.json())
+      .then((data) => {
         console.log(data);
         setItemInfo(data.results);
-});
-};  
+      });
+  };  
   
 
-useEffect(() => {
+  useEffect(() => {
     makeAPICall();
   }, [props.title]);
-return (
+  return (
     <div className="ProductInfo">
         <h3 style={{ marginBottom: 20 }}>Sneakers</h3>
         <div>

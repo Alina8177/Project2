@@ -8,21 +8,21 @@ const SingleShoeItem = () => {
     const { id } = useParams()
     const [shoe, setShoe] = useState(null)
     
+    
+
     useEffect(() => {
-        const makeAPICall = () => {
-            fetch(`https://v1-sneakers.p.rapidapi.com/v1/sneakers/${id}`, {
+        
+        fetch(`https://v1-sneakers.p.rapidapi.com/v1/sneakers/${id}`, {
             method: "GET",
             headers: {
                 "x-rapidapi-host": hostName,
                 "x-rapidapi-key": apiKey
             },
         })
-                .then((res) => res.json())
-                .then((data) => {
-                setShoe(data.results[0]);
+        .then((res) => res.json())
+        .then((data) => {
+            setShoe(data.results[0]);
         });
-        };  
-        makeAPICall()
     }, [id])
 
     console.log(shoe)
