@@ -35,10 +35,10 @@ const SingleShoeItem = () => {
 
     return (<div>
         <h2>
-            {shoe?.shoe}
+            {shoe.shoe}
         </h2>
         <Image
-        src={shoe?.media?.imageUrl}
+        src={shoe.media.imageUrl}
         alt="url"
         width={300}
         height={300}
